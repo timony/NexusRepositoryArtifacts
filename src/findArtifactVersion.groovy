@@ -2,9 +2,9 @@ import groovy.json.JsonSlurper
 
 try {
     def buildNexusUrl = 'http://10.90.156.234:8081'
-    def buildArtifactId = 'hallintapalvelu'
     def buildRepository = 'tpt-snapshots'
-    def buildGroupId = 'fi.trafi'
+    def buildArtifactId = 'hallintapalvelu'
+    def buildGroupId = 'fi.trafi.tpt'
 
     def artifacts = []
     def url = "${buildNexusUrl}/service/rest/beta/search?repository=${buildRepository}&maven.groupId=${buildGroupId}&maven.artifactId=${buildArtifactId}"
